@@ -11,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 export default function Header() {
   const pathname = usePathname();
@@ -34,9 +35,9 @@ export default function Header() {
       {/*More*/}
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <div className="size-[38px] bg-[#161616] cursor-pointer hover:bg-[#161616]/80 duration-200 transition-all text-muted-foreground hover:text-primary rounded-full flex items-center justify-center">
+          <Button className="size-[38px] bg-[#161616] ring-0! cursor-pointer hover:bg-[#161616]/80 duration-200 transition-all text-muted-foreground hover:text-primary rounded-full flex items-center justify-center">
             <MoreVertical className="size-4.5" />
-          </div>
+          </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="bg-[#161616] rounded-2xl">
           <DropdownMenuLabel className="font-medium">
