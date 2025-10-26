@@ -70,7 +70,7 @@ export default function StackPage() {
         },
         {
           label: "Stripe",
-          icon: "/stripe.png",
+          icon: "/stripe.png", 
           description: "Payment processing platform",
           href: "https://stripe.com/",
         },
