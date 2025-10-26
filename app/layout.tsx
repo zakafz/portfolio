@@ -49,12 +49,14 @@ export const metadata: Metadata = {
     description:
       "Design technologist and software developer in Montreal specializing in minimalist, UX-focused interfaces.",
     siteName: "Zakary Fofana Portfolio",
+    images: ["/og.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Zakary Fofana - Design Technologist & Software Developer",
     description:
       "Design technologist and software developer in Montreal specializing in minimalist, UX-focused interfaces.",
+    images: ["/og.png"],
   },
   robots: {
     index: true,
