@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import BreadcrumbComponent from "@/components/breadcrumb";
 import ScrollContainer from "@/components/scroll-container";
+import PageLoader from "@/components/page-loader";
 import { Metadata } from "next";
 
 const geistSans = Geist({
@@ -80,9 +81,12 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <ScrollContainer>
-          <Header />
-          <BreadcrumbComponent />
-          <div className="w-full px-8 pt-10 pb-10">{children}</div>
+          <PageLoader />
+          <div className="opacity-0 animate-fade-in">
+            <Header />
+            <BreadcrumbComponent />
+            <div className="w-full px-8 pt-10 pb-10">{children}</div>
+          </div>
         </ScrollContainer>
       </body>
     </html>
