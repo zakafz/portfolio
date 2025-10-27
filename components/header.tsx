@@ -31,7 +31,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="w-fit z-10 bg-black/60 backdrop-blur-md h-[50px] fixed top-[calc(6vh+8px)] right-[calc(5vw+8px)] rounded-3xl flex items-center p-1.5">
+    <div className="w-fit z-50 bg-black h-[50px] fixed top-[calc(6vh+8px)] right-[calc(5vw+8px)] rounded-3xl flex items-center p-1.5">
       {/*More*/}
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
