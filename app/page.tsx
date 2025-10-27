@@ -59,15 +59,15 @@ export default function Home() {
         </p>
       </div>
       {/*Section 2*/}
-      <div className="flex py-8 gap-8">
+      <div className="flex py-8 gap-8 max-lg:flex-col">
         <Link
           href={"https://localcard.live"}
           target="_blank"
-          className="relative flex size-60 min-w-60 md:min-w-100 items-end justify-end overflow-hidden bg-background rounded-3xl border px-4 md:size-100"
+          className="relative flex w-full aspect-square md:min-w-100 items-end justify-end overflow-hidden bg-background rounded-3xl border px-4 md:size-100"
         >
           <img
             src="/localcard.png"
-            className="absolute inset-0 z-20 m-auto size-10 md:size-20"
+            className="absolute inset-0 z-20 m-auto size-20"
           />
           <div className="relative z-20 flex w-full justify-between items-center px-2 py-3 backdrop-blur-[2px] md:px-4">
             <p className="font-medium text-sm text-muted-foreground">
@@ -108,7 +108,7 @@ export default function Home() {
         </div>
       </div>
       {/*Section 3*/}
-      <div className="flex gap-8 w-full">
+      <div className="flex gap-8 w-full max-lg:flex-col">
         <div className="border rounded-3xl p-5 w-full grid-cols-2 grid gap-5">
           {/*Item*/}
           {mainStack.map((item, i) => {
@@ -117,7 +117,7 @@ export default function Home() {
                 href={item.href}
                 target="_blank"
                 key={i}
-                className="flex justify-between group h-[58px] items-center px-1.5 w-full rounded-2xl hover:bg-accent/60 border border-transparent hover:border-border duration-200 relative overflow-hidden"
+                className="flex justify-between max-lg:bg-accent/40 max-lg:border-border group max-lg:col-span-2 h-[58px] items-center px-1.5 w-full rounded-2xl hover:bg-accent/60 border border-transparent hover:border-border duration-200 relative overflow-hidden"
               >
                 <div className="flex gap-3">
                   <div className="size-[46px] rounded-xl  [&_img]:size-full [&_img]:object-cover overflow-hidden ">

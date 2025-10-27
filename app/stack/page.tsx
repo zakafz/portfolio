@@ -222,14 +222,14 @@ export default function StackPage() {
                   {item.label}
                 </h2>
               </div>
-              <div className="grid grid-cols-3 gap-3 ">
+              <div className="grid grid-cols-3 gap-3 max-lg:grid-cols-1">
                 {/*Item*/}
                 {item.items.map((card, i) => {
                   return (
                     <Link
                       href={card.href}
                       key={i}
-                      className="w-full relative overflow-hidden group hover:bg-accent/60 duration-200 cursor-pointer border border-transparent hover:border-border rounded-3xl flex flex-col p-4"
+                      className="w-full relative overflow-hidden group max-lg:bg-accent/40 max-lg:border-border hover:bg-accent/60 duration-200 cursor-pointer border border-transparent hover:border-border rounded-3xl flex flex-col p-4"
                     >
                       <div className="flex flex-row items-center gap-3">
                         <div className="size-[50px] relative duration-200 rounded-2xl [&_img]:size-full [&_img]:object-cover overflow-hidden ">

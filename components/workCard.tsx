@@ -14,7 +14,7 @@ export default function WorkCard() {
     },
     {
       title: "Measurely",
-      position: "Co-Founder & Product Designer",
+      position: "Co-Founder",
       icon: "/measurely.png",
       href: "https://github.com/measurely-dev/measurely",
       date: "2024 - 2025",
@@ -57,12 +57,12 @@ export default function WorkCard() {
                     <h2 className="text-white font-semibold text-sm">
                       {item.title}
                     </h2>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-muted-foreground text-sm truncate w-full">
                       {item.position}
                     </p>
                   </div>
                 </div>
-                <div className="text-muted-foreground text-sm">{item.date}</div>
+                <div className="text-muted-foreground text-sm whitespace-nowrap w-fit">{item.date}</div>
               </Link>
             );
           })}

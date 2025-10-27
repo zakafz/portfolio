@@ -36,15 +36,15 @@ export default function AboutPage() {
 
   return (
     <>
-      <div className="flex gap-10 pb-8 border-b mb-8">
-        <div className="w-fit h-fit z-10">
+      <div className="flex gap-10 pb-8 border-b mb-8 max-lg:flex-col">
+        <div className="w-fit max-lg:w-full max-lg:pointer-events-none h-fit z-10">
           <CometCard>
             <button
               type="button"
               onClick={() => {
                 router.push("https://linkedin.com/in/zakary-fofana");
               }}
-              className="flex w-80 cursor-pointer flex-col items-stretch rounded-2xl border-0 bg-[#1F2121] p-1.5"
+              className="flex w-80 max-lg:w-full cursor-pointer flex-col items-stretch rounded-2xl border-0 bg-[#1F2121] p-1.5"
               aria-label="View invite F7RA"
               style={{
                 transformStyle: "preserve-3d",
@@ -74,12 +74,12 @@ export default function AboutPage() {
           </CometCard>
         </div>
         <div className="flex flex-col">
-          <div className="mb-4 flex space-x-2">
+          <div className="mb-4 flex space-x-2 overflow-x-scroll no-scrollbar">
             {ITEMS.map((item, index) => (
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`rounded-md px-3 py-1 text-sm font-medium ${
+                className={`rounded-md px-3 py-1 whitespace-nowrap text-sm font-medium ${
                   activeIndex === index
                     ? "bg-accent border text-primary"
                     : "bg-accent/40 border text-muted-foreground"

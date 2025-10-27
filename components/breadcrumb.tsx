@@ -22,14 +22,14 @@ export default function BreadcrumbComponent() {
       case "/stack":
         return "Stack";
       default:
-        return "";
+        return "404";
     }
   }
 
   const pageLabel = getPageLabel(pathname);
 
   return (
-    <Breadcrumb className="pt-[29px] pb-2.5 pl-8 w-full">
+    <Breadcrumb className="pt-[29px] pb-2.5 pl-8 w-full max-lg:pt-8 max-lg:pb-0 max-lg:pl-4">
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink href="/">Portfolio</BreadcrumbLink>

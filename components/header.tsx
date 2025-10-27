@@ -31,7 +31,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="w-fit z-50 bg-black h-[50px] fixed top-[calc(6vh+8px)] right-[calc(5vw+8px)] rounded-3xl flex items-center p-1.5">
+    <div className="w-fit max-lg:w-[calc(95vw-16px)] max-lg:relative max-lg:mx-auto max-lg:mt-2 max-lg:justify-between z-50 bg-black h-[50px] fixed lg:top-[calc(6vh+8px)] lg:right-[calc(5vw+8px)] rounded-3xl flex items-center p-1.5">
       {/*More*/}
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
@@ -39,7 +39,7 @@ export default function Header() {
             <MoreVertical className="size-4.5" />
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="bg-[#161616] rounded-2xl">
+        <DropdownMenuContent className="bg-[#161616] rounded-2xl max-lg:ml-[calc(2.5vw+8px)]">
           <DropdownMenuLabel className="font-medium">
             Connect with me
           </DropdownMenuLabel>

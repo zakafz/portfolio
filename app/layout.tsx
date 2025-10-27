@@ -5,6 +5,7 @@ import BreadcrumbComponent from "@/components/breadcrumb";
 import ScrollContainer from "@/components/scroll-container";
 import PageLoader from "@/components/page-loader";
 import { Metadata } from "next";
+import PortfolioLayout from "./portfolioLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -75,19 +76,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" className="dark overflow-hidden" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex items-center justify-center h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex items-center justify-center h-screen overflow-y-hidden  `}
         suppressHydrationWarning
       >
-        <ScrollContainer>
-          <PageLoader />
-          <div className="opacity-0 animate-fade-in">
-            <Header />
-            <BreadcrumbComponent />
-            <div className="w-full px-8 pt-10 pb-10">{children}</div>
-          </div>
-        </ScrollContainer>
+        <PortfolioLayout>{children}</PortfolioLayout>
       </body>
     </html>
   );
