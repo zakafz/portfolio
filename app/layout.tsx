@@ -1,11 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
-import BreadcrumbComponent from "@/components/breadcrumb";
-import ScrollContainer from "@/components/scroll-container";
-import PageLoader from "@/components/page-loader";
 import { Metadata } from "next";
 import PortfolioLayout from "./portfolioLayout";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -77,6 +74,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark overflow-hidden" suppressHydrationWarning>
+      <Analytics />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex items-center justify-center h-screen overflow-y-hidden  `}
         suppressHydrationWarning
