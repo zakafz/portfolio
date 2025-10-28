@@ -34,7 +34,7 @@ export default function Home() {
     {
       title: "Stripe",
       description: "Payment Platform",
-      icon: "/Stripe.png",
+      icon: "/stripe-2.png",
       href: "https://stripe.com/",
     },
     {
