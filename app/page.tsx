@@ -53,9 +53,8 @@ export default function Home() {
         <p className="relative text-base text-muted-foreground">
           Design technologist and software developer based in Laval, Québec. I
           specialize in <span className="text-white">minimalist</span>,
-          UX-driven interfaces. I deliver products that make sense—direct,
-          efficient, and built for the end user. I prioritize simplicity and
-          clarity.
+          UX-driven interfaces. I deliver products that make sense as soon as
+          you see it. I prioritize simplicity and clarity.
         </p>
       </div>
       {/*Section 2*/}
